@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drikkepengeudregner</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="drikkepengeboks">
+
+<h1>Drikkepengeudregner</h1>
+<p>Få hjælp til at udregne, hvor mange drikkepenge du bør give.
+  Udfyld nedenstående og se beløbet.
+
+
+  <h2>Hvad lyder regningen på?</h2>
+  <input id="kroner" type="number" placeholder="Beløbet i kr.">
+
+<h2>Hvor befinder du dig?</h2>
+<select id="land">
+  <option disabled selected value="0">-- Vælg venligst et land --</option>
+
+  <option value="0.12">Danmark</option>
+  <option value="0.05">Gran Canaria</option>
+  <option value="0.10">Kuching</option>
+</select>
+
+
+<h2>Hvor god var mad og service?</h2>
+<select id="kvalitet">
+    <option disabled selected value="0">-- Vælg venligst din vurdering --</option>
+
+  <option value="1.1">Rigtig god</option>
+  <option value="1">Godkendt</option>
+  <option value="0.9">Under forventning</option>
+</select>
+
+<h3 id="regnformig">Vis mig beløbet!</h3>
+
+
+
+<div id="tipbelob">
+    kr. <span id="tip">0.00</span>
+  </div>
+
+</div>
+
+<button id="palce" onclick="frugt()">Sorter</button>
+    <button id="palce" onclick="frugt2()">Sorter og sæt ind</button>
+
+    <div id="tipsi"></div>
+</body>
+
+
+
+</html>
